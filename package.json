@@ -21,7 +21,7 @@
     "@codemirror/view": "^6.38.1",
     "codemirror": "^6.0.2",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "nodemon": "^3.1.10",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
