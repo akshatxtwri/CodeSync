@@ -8,7 +8,7 @@ import ACTIONS from '../Actions.js';
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
   const editorRef = useRef(null);
   const viewRef = useRef(null);
-  const codeRef = useRef(''); // Keeps track of last known code
+  const codeRef = useRef(''); 
 
   useEffect(() => {
     if (!editorRef.current) return;
@@ -17,7 +17,7 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
       if (update.changes) {
         const newCode = update.state.doc.toString();
 
-        // Emit only if code actually changed
+      
         if (newCode !== codeRef.current) {
           codeRef.current = newCode;
           onCodeChange(newCode);
